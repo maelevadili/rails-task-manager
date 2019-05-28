@@ -1,0 +1,12 @@
+<h1>Add a new task</h1>
+
+<!-- Logique de partial, ou on abstrait du markup HTML repetitif dans
+une espece de sub view a part, pour ensuite inserer cette sub view avec
+un render -->
+
+<%= render 'form', task: @task %>
+
+<hr>
+<%= link_to tasks_path do %>
+  <i class="fa fa-history"></i> Back to list
+<% end %>
